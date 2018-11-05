@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    <!-- <link  rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+    <style>
+    
+    
+    
+    </style>
+</head>
+<body>
+    <header id="header">
+            <h1>Trivia Game</h1>
+            <h3>How well do you know World Geography?</h3>
+            <h4>Press the button to get started.  <br>You have 30 seconds to answer the questions.</h4>
+            <button id="button">click me</button>
+
+    </header>
+    
+    <div id="container">
+        <h1>Trivia Game: <br>How well do you know World Geography?</h1>
+        <div id="timer">Time Remaining: </div>
+        <div id="section">
+
+            <h4>Which is the smallest country, measured by total land area?</h4>
+            <input type="radio" name="smallest" value="maldives"> Maldives
+            <input type="radio" name="smallest" value="vatican"> Vatican City
+            <input type="radio" name="smallest" value="monaco"> Monaco
+
+            <h4>Which is the longest river in the world?</h4>
+            <input type="radio" name="river" value="yellow"> Yellow River
+            <input type="radio" name="river" value="amazon"> Amazon River
+            <input type="radio" name="river" value="nile"> Nile River
+
+            <h4>Which is the largest desert in the world?</h4>
+            <input type="radio" name="desert" value="arabian"> Arabian Desert
+            <input type="radio" name="desert" value="saharan"> Saharan Desert
+            <input type="radio" name="desert" value="australian"> Great Australian Desert
+
+            <h4>How many Great Lakes are there in the United States?</h4>
+            <input type="radio" name="lakes" value="3"> 3
+            <input type="radio" name="lakes" value="5"> 5
+            <input type="radio" name="lakes" value="6"> 6
+
+            <h4>Which of these cities are not in Europe?</h4>
+            <input type="radio" name="cities" value="moscow"> Moscow
+            <input type="radio" name="cities" value="prague"> Prague
+            <input type="radio" name="cities" value="reykjavik"> Reykjavik
+            
+
+            <h4>Great Britain is made up of how many countries?</h4>
+            <input type="radio" name="britain" value="3"> 3
+            <input type="radio" name="britain" value="4"> 4
+            <input type="radio" name="britain" value="5"> 5
+
+
+            <br><br>
+            <button id="submit">Check Your Answers!</button>
+        </div>
+        
+
+    </div>
+    <div id="results">
+            <h2>ALL DONE!</h2>
+            <h3 id="correct">Correct Answers: </h3>
+            <h3 id="incorrect">Incorrect Answers: </h3>
+            <h3 id="unanswered">Unanswered Questions: </h3>
+            <h4 id="win"></h4>
+
+        </div>
+</body>
+</html>
