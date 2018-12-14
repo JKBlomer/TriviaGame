@@ -19,14 +19,20 @@
             <h1>Trivia Game</h1>
             <h3>How well do you know World Geography?</h3>
             <h4>Press the button to get started.  <br>You have 30 seconds to answer the questions.</h4>
-            <button id="button">click me</button>
+            
 
     </header>
+    <button id="clickMeButton">CLICK ME</button>
     
     <div id="container">
-        <h1>Trivia Game: <br>How well do you know World Geography?</h1>
-        <div id="timer">Time Remaining: </div>
+        <div id="timerSection">
+                <h1>Trivia Game: <br>How well do you know World Geography?</h1>
+                <div id="timer"><h3>Time Remaining:</h3> </div>
+
+        </div>
+        
         <div id="section">
+
 
             <h4>Which is the smallest country, measured by total land area?</h4>
             <input type="radio" name="smallest" value="maldives"> Maldives
@@ -42,27 +48,33 @@
             <input type="radio" name="desert" value="arabian"> Arabian Desert
             <input type="radio" name="desert" value="saharan"> Saharan Desert
             <input type="radio" name="desert" value="australian"> Great Australian Desert
-
-            <h4>How many Great Lakes are there in the United States?</h4>
-            <input type="radio" name="lakes" value="3"> 3
-            <input type="radio" name="lakes" value="5"> 5
-            <input type="radio" name="lakes" value="6"> 6
-
-            <h4>Which of these cities are not in Europe?</h4>
-            <input type="radio" name="cities" value="moscow"> Moscow
-            <input type="radio" name="cities" value="prague"> Prague
-            <input type="radio" name="cities" value="reykjavik"> Reykjavik
+        </div>
+        <div id="section2">
+                <h4>How many Great Lakes are there in the United States?</h4>
+                <input type="radio" name="lakes" value="3"> 3
+                <input type="radio" name="lakes" value="5"> 5
+                <input type="radio" name="lakes" value="6"> 6
+    
+                <h4>Which of these cities are not in Europe?</h4>
+                <input type="radio" name="cities" value="moscow"> Moscow
+                <input type="radio" name="cities" value="prague"> Prague
+                <input type="radio" name="cities" value="reykjavik"> Reykjavik
+                
+    
+                <h4>Great Britain is made up of how many countries?</h4>
+                <input type="radio" name="britain" value="3"> 3
+                <input type="radio" name="britain" value="4"> 4
+                <input type="radio" name="britain" value="5"> 5
+    
+        </div>
             
 
-            <h4>Great Britain is made up of how many countries?</h4>
-            <input type="radio" name="britain" value="3"> 3
-            <input type="radio" name="britain" value="4"> 4
-            <input type="radio" name="britain" value="5"> 5
-
-
             <br><br>
-            <button id="submit">Check Your Answers!</button>
-        </div>
+            <div id="submitButton">
+                    <button id="submit">Check Your Answers!</button>
+            </div>
+            
+        
         
 
     </div>
@@ -71,7 +83,7 @@
             <h3 id="correct">Correct Answers: </h3>
             <h3 id="incorrect">Incorrect Answers: </h3>
             <h3 id="unanswered">Unanswered Questions: </h3>
-            <h4 id="win"></h4>
+            <button id="playAgain">Play Again!</button>
 
         </div>
 </body>

@@ -1,5 +1,6 @@
 $(document).ready(function () {
     
+function runProgram () {
 
     $("#container").css("display", "none");
     $("#results").css("display", "none");
@@ -12,10 +13,10 @@ $(document).ready(function () {
 
 
 
-    $("#button").on("click", function () {
+    $("#clickMeButton").on("click", function () {
         $("#header").css("display", "none");
         $(this).css("display", "none");
-        $("#container").css("display", "inline");
+        $("#container").css("display", "inline-block");
 
         runTimer();
         
@@ -24,7 +25,7 @@ $(document).ready(function () {
     $("#submit").on("click", function () {
         
         $("#container").css("display", "none");
-        $("#results").css("display", "inline");
+        $("#results").css("display", "inline-block");
         clearInterval(validID);
         determineQuestions();
         updateScore();
@@ -123,22 +124,30 @@ $(document).ready(function () {
 
     }
 
+    $("#playAgain").on("click", function(){
+        location.reload(true);
+    } )
+
     var runTimer = function() {
         
         var timer = 30;
         clearInterval(validID);
         validID = setInterval(function() {
             timer--;
-            $("#timer").html("Time Remaining: " + timer);
+            $("h3").html("Time Remaining: " + timer);
             if(timer===0) {
                 clearInterval(validID);
                 $("#container").css("display", "none");
-                $("#results").css("display", "inline");
+                $("#results").css("display", "inline-block");
                 determineQuestions();
                 updateScore();
             }
         }, 1000);
 }
+}
+    
+    runProgram();
+
     
 })
 

@@ -1,8 +1,59 @@
 
  body {
+
+    text-align: center;
     background-image: url("../images/worldmap2.jpg" );
     background-size: 100%;
     background-repeat: no-repeat;
+    
+}
+header {
+    background-color: orange;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    
+}
+#clickMeButton {
+    margin-top: 10px;
+}
+#container {
+    width: 80%;
+    position: relative;
+    overflow: auto;
+}
+#timerSection {
+    padding-bottom: 5px;
+}
+#section {
+    background-color: yellow;
+    border-radius: 5px;
+    width: 49%;
+    float: left;
+    
 
+
+
+}
+#section2 {
+    background-color: yellow;
+    border-radius: 5px;
+    width: 49%;
+    float: right;
+    
+}
+#results {
+    background-color: orange;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 5px;
+    
+    
+}
+
+#submit {
+    margin-top: 20px;
+    background-color: light grey;
     
 }
