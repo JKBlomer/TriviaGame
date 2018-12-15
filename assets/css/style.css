@@ -9,7 +9,7 @@
 }
 header {
     background-color: orange;
-    border-radius: 5px;
+    border-radius: 20px;
     margin-top: 5px;
     padding-top: 3px;
     padding-bottom: 5px;
@@ -28,9 +28,10 @@ header {
 }
 #section {
     background-color: yellow;
-    border-radius: 5px;
+    border-radius: 20px;
     width: 49%;
     float: left;
+    padding-bottom: 20px;
     
 
 
@@ -38,8 +39,10 @@ header {
 }
 #section2 {
     background-color: yellow;
-    border-radius: 5px;
+    border-radius: 20px;
     width: 49%;
+    padding-bottom: 20px;
+
     float: right;
     
 }
@@ -47,7 +50,7 @@ header {
     background-color: orange;
     margin: 50px;
     padding: 50px;
-    border-radius: 5px;
+    border-radius: 20px;
     
     
 }
